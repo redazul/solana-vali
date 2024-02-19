@@ -3,7 +3,10 @@
 sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
 ```
 ```
-echo 'export PATH="/home/cyon/.local/share/solana/install/active_release/bin:$PATH"' >> ~/.bashrc
+echo 'export PATH="/home/$USER/.local/share/solana/install/active_release/bin:$PATH"' >> ~/.bashrc
+```
+```
+source ~/.bashrc
 ```
 ```
 sudo chown $USER /act
