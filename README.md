@@ -14,3 +14,11 @@ sudo chown $USER /act
 ```
 curl -s https://raw.githubusercontent.com/redazul/solana-vali/master/tune.sh | sudo bash
 ```
+```
+solana-keygen new
+```
+```
+solana config set -u d
+```
+
+
