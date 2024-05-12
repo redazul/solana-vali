@@ -21,4 +21,8 @@ solana-keygen new
 solana config set -u d
 ```
 
+```
+sudo apt install fail2ban
+```
+
 
