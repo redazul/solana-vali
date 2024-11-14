@@ -1,5 +1,5 @@
 exec solana-validator \
-    --identity /home/$USER/Desktop/SolanaValidator/validator-keypair.json \
+    --identity /home/$USER/.config/solana/id.json \
     --ledger /home/$USER/Desktop/SolanaValidator/ledger \
     --log /home/$USER/Desktop/SolanaValidator/solana-rpc.log \
     --accounts /mnt/solana-accounts \
