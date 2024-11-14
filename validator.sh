@@ -1,19 +1,22 @@
 exec solana-validator \
-    --identity /home/$USER/.config/solana/id.json  \
-    --vote-account /home/$USER/vote-account-keypair.json  \
-    --known-validator dv1ZAGvdsz5hHLwWXsVnM94hWf1pjbKVau1QVkaMJ92 \
-    --known-validator dv2eQHeP4RFrJZ6UeiZWoc3XTtmtZCUKxxCApCDcRNV \
-    --known-validator dv4ACNkpYPcE3aKmYDqZm9G5EB3J4MRoeE7WNDRBVJB \
-    --known-validator dv3qDFk1DTF36Z62bNvrCXe9sKATA6xvVy6A798xxAS \
+    --identity /home/$USER/Desktop/SolanaValidator/validator-keypair.json \
+    --ledger /home/$USER/Desktop/SolanaValidator/ledger \
+    --log /home/$USER/Desktop/SolanaValidator/solana-rpc.log \
+    --accounts /mnt/solana-accounts \
+    --known-validator 7Np41oeYqPefeNQEHSv1UDhYrehxin3NStELsSKCT4K2 \
+    --known-validator GdnSyH3YtwcxFvQrVVJMm1JhTS4QVX7MFsX56uJLUfiZ \
+    --known-validator DE1bawNcRJB9rVm3buyMVfr8mBEoyyu73NBovf2oXJsJ \
+    --known-validator CakcnaRDHka2gXyfbEd2d3xsvkJkqsLw2akB3zsN1D2S \
     --only-known-rpc \
-    --log /home/$USER/solana-validator.log \
-    --ledger /home/$USER/ledger \
-    --accounts /home/$USER/accounts \
     --rpc-port 8899 \
+    --private-rpc \
     --dynamic-port-range 8000-8020 \
-    --entrypoint entrypoint.mainnet.solana.com:8001 \
-    --entrypoint entrypoint2.mainnet.solana.com:8001 \
-    --entrypoint entrypoint3.mainnet.solana.com:8001 \
-    --expected-genesis-hash EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG \
+    --entrypoint entrypoint.mainnet-beta.solana.com:8001 \
+    --entrypoint entrypoint2.mainnet-beta.solana.com:8001 \
+    --entrypoint entrypoint3.mainnet-beta.solana.com:8001 \
+    --entrypoint entrypoint4.mainnet-beta.solana.com:8001 \
+    --entrypoint entrypoint5.mainnet-beta.solana.com:8001 \
+    --expected-genesis-hash 5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d \
     --wal-recovery-mode skip_any_corrupted_record \
-    --limit-ledger-size
+    --limit-ledger-size \
+    --no-voting
