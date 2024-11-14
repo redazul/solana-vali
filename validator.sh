@@ -8,12 +8,12 @@ exec solana-validator \
     --only-known-rpc \
     --log /home/$USER/solana-validator.log \
     --ledger /home/$USER/ledger \
-    --accounts /act/accounts \
+    --accounts /home/$USER/accounts \
     --rpc-port 8899 \
     --dynamic-port-range 8000-8020 \
-    --entrypoint entrypoint.devnet.solana.com:8001 \
-    --entrypoint entrypoint2.devnet.solana.com:8001 \
-    --entrypoint entrypoint3.devnet.solana.com:8001 \
+    --entrypoint entrypoint.mainnet.solana.com:8001 \
+    --entrypoint entrypoint2.mainnet.solana.com:8001 \
+    --entrypoint entrypoint3.mainnet.solana.com:8001 \
     --expected-genesis-hash EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG \
     --wal-recovery-mode skip_any_corrupted_record \
     --limit-ledger-size
